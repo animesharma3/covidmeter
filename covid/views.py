@@ -3,6 +3,7 @@ from . import scrape
 
 # Create your views here.
 def home(request):
+    # Homepage
     url = 'https://api.covid19api.com/summary'
     data, countries = scrape.get_data(url)
     context = {
